@@ -1,0 +1,18 @@
+# ignore files
+*~
+*.swp
+*.a
+*.o
+*.dll
+*.so
+*.lib
+*.pyc
+*.cubin
+
+compile_commands.json
+
+# ignore directories
+__pycache__/
+build/
+.cache/
+.vscode/
