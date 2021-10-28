@@ -5,6 +5,10 @@ learning computer science
    :maxdepth: 2
    :caption: Contents:
 
+   docker
+   git
+   linux
+
 
 
 Indices and tables
