@@ -8,7 +8,7 @@ There are two methods:
 
 #. use cmake `ExternalProject_Add`_, see `cmake_protobuf_example1`_.
 
-#. use protobuf as third_party library directly, and write cmake macro or function to 
+#. use protobuf as third_party library directly, and write cmake macro or function to
    handle link libraries and compile proto files, see `cmake_protobuf_example2`_.
 
 

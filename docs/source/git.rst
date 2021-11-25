@@ -26,3 +26,32 @@ reference: https://stackoverflow.com/questions/2919878/git-rewrite-previous-comm
 change last commit ::
 
     git commit --amend --author="Author Name <email@address.com>" --no-edit
+
+
+How to delete a submodule?
+---------------------------
+
+reference: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+::
+
+    git submodule deinit -f -- a/submodule
+    rm -rf .git/modules/a/submodule
+    git rm -f a/submodule
+    # Note: a/submodule (no trailing slash)
+
+or if want to move submodule to source tree:
+::
+
+    mv a/submodule a/submodule_tmp
+    git submodule deinit -f -- a/submodule
+    # Note: a/submodule (no trailing slash)
+    rm -rf .git/modules/a/submodule
+    git rm --cached a/submodule
+    mv a/submodule_tmp a/submodule
+
+How to update all submodules?
+-------------------------------
+reference: https://stackoverflow.com/questions/8191299/update-a-submodule-to-the-latest-commit
+::
+
+    git submodule update --remote --merge

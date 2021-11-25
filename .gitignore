@@ -13,6 +13,5 @@ compile_commands.json
 
 # ignore directories
 __pycache__/
-build/
 .cache/
 .vscode/

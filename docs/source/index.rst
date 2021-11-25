@@ -1,4 +1,4 @@
-learning computer science 
+learning computer science
 ===========================
 
 .. toctree::
