@@ -5,6 +5,7 @@ learning computer science
    :maxdepth: 2
    :caption: Contents:
 
+   asan
    cmake
    docker
    git
