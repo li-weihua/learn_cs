@@ -15,3 +15,11 @@ There are two methods:
 .. _ExternalProject_Add: https://cmake.org/cmake/help/latest/module/ExternalProject.html
 .. _cmake_protobuf_example1: https://github.com/li-weihua/cmake_protobuf_example1
 .. _cmake_protobuf_example2: https://github.com/li-weihua/cmake_protobuf_example2
+
+
+How to add ``--whole-archive`` to link options?
+---------------------------------------------------
+
+::
+
+    target_link_libraries(target PUBLIC|PRIVATE -Wl,--whole-archive libA... -Wl,--no-whole-archive ...)
